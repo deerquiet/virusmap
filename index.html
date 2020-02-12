@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VirusMap病毒地图</title>
+    <meta name="keywords" content="SARS-CoV-2,肺炎,新型冠状病毒,2019-nCoV,肺炎疫情监控,全国肺炎疫情实时动态监控,virusmap,病毒地图，武汉肺炎，病毒数据可视化">
+    <meta name="description" content="肺炎疫情实时动态监控">
+      <link rel="stylesheet" href="/layui/dist/css/layui.css"  media="all">
+</head>
+<style>
+.banquan{
+	text-align: center;
+	font-size: 9px;
+	color: #6a7179;
+	</style>
+<body>  <center><h3>新型冠状病毒（SARS-CoV-2）肺炎疫情实时动态监控</h3>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=524148423&auto=1&height=32"></iframe>
+<div class="layui-tab">
+  <ul class="layui-tab-title">
+    <li class="layui-this">丁香</li>
+    <li>百度</li>
+    <li>腾讯</li>
+    <li>较真</li>
+    <li>JH</li>
+    <li>新浪</li>
+    <li>凤凰</li>
+    <li>梅斯</li>
+    <li>网易</li>
+    <li>知乎</li>
+    <li>一财</li>
+    <li>夸克</li>
+  </ul>
+  <div class="layui-tab-content">
+    <div class="layui-tab-item layui-show">
+     <iframe id="main" name="main" src="https://3g.dxy.cn/newh5/view/pneumonia" frameborder="0" width="100%" ></iframe></div>
+             <div class="layui-tab-item"> <iframe id="main6" name="main" src="https://voice.baidu.com/act/newpneumonia/newpneumonia" frameborder="0" width="100%" ></iframe></div>
+            
+             <div class="layui-tab-item"> <iframe id="main2" name="main" src="https://news.qq.com/zt2020/page/feiyan.htm" frameborder="0" width="100%" ></iframe></div>
+            
+             <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://vp.fact.qq.com/home'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-较真</button></div>
+             
+             <div class="layui-tab-item"> <iframe id="main4" name="main" src="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" frameborder="0" width="100%" ></iframe></div>
+             
+             
+             
+            <div class="layui-tab-item"> <iframe id="main5" name="main" src="https://news.sina.cn/zt_d/yiqing0121" frameborder="0" width="100%" ></iframe></div>
+    
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://news.ifeng.com/c/special/7tPlDSzDgVk'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-凤凰</button></div>
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'http://m.medsci.cn/wh.asp'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-梅斯</button></div>
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://news.163.com/special/epidemic/'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-网易</button></div>
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://www.zhihu.com/special/19681091'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-知乎</button></div>
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://m.yicai.com/news/100476965.html'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-一财</button></div>
+    <div class="layui-tab-item"> <button type="button"  onclick="window.location.href = 'https://broccoli.uc.cn/apps/pneumonia/routes/index'" class="layui-btn layui-btn-danger layui-btn-radius">进入查看详情-夸克</button></div>
+    <div class="layui-tab-item"> <iframe id="main9" name="main" src="www.virusmap.org/2020-virus-map" frameborder="0" width="100%" ></iframe></div>
+  </div>
+  </div>
+	<div class="center-footer">
+					<p class="banquan"> VirusMap Copyright © virusmap.org. All Rights Reserved</p>
+				</div>
+</center>
+</body>
+
+<script src="//WWW.virusmap.org/layui/dist/layui.js" charset="utf-8"></script>
+<script>
+    var ifm= document.getElementById("main");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main1");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main2");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main3");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main4");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main5");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main6");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main7");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main8");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+    var ifm= document.getElementById("main9");
+    ifm.height=document.documentElement.clientHeight - 28;
+</script>
+<script>
+layui.use('element', function(){
+  var $ = layui.jquery
+  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+  
+  //触发事件
+  var active = {
+    tabAdd: function(){
+      //新增一个Tab项
+      element.tabAdd('demo', {
+        title: '新选项'+ (Math.random()*1000|0) //用于演示
+        ,content: '内容'+ (Math.random()*1000|0)
+        ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+      })
+    }
+    ,tabDelete: function(othis){
+      //删除指定Tab项
+      element.tabDelete('demo', '44'); //删除：“商品管理”
+      
+      
+      othis.addClass('layui-btn-disabled');
+    }
+    ,tabChange: function(){
+      //切换到指定Tab项
+      element.tabChange('demo', '22'); //切换到：用户管理
+    }
+  };
+  
+  $('.site-demo-active').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+  
+  //Hash地址的定位
+  var layid = location.hash.replace(/^#test=/, '');
+  element.tabChange('test', layid);
+  
+  element.on('tab(test)', function(elem){
+    location.hash = 'test='+ $(this).attr('lay-id');
+  });
+  
+});
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+        /* 鼠标点击特效 - 7Core.CN */
+        var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("中国加油", "武汉加油", "众志成城", "早报告", "戴口罩", "勤洗手", "拒热闹" ,"少串门", "不赶集", "不信谣", "不恐慌", "慎聚餐");var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "#ff6651"});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});
+</script>
+<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278589216&web_id=1278589216"></script>
+
+</html>
