@@ -8,7 +8,7 @@
     <title>VirusMap病毒地图</title>
     <meta name="keywords" content="SARS-CoV-2,肺炎,新型冠状病毒,2019-nCoV,肺炎疫情监控,全国肺炎疫情实时动态监控,virusmap,病毒地图，武汉肺炎，病毒数据可视化">
     <meta name="description" content="肺炎疫情实时动态监控">
-      <link rel="stylesheet" href="/layui/dist/css/layui.css"  media="all">
+      <link rel="stylesheet" href="/CSS/layui.css"  media="all">
 </head>
 <style>
 .banquan{
@@ -63,7 +63,7 @@
 </center>
 </body>
 
-<script src="//WWW.virusmap.org/layui/dist/layui.js" charset="utf-8"></script>
+<script src="//WWW.virusmap.org/CSS/layui.js" charset="utf-8"></script>
 <script>
     var ifm= document.getElementById("main");
     ifm.height=document.documentElement.clientHeight - 28;
@@ -149,10 +149,10 @@ layui.use('element', function(){
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-        /* 鼠标点击特效 - 7Core.CN */
+        /* 鼠标点击特效*/
         var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("中国加油", "武汉加油", "众志成城", "早报告", "戴口罩", "勤洗手", "拒热闹" ,"少串门", "不赶集", "不信谣", "不恐慌", "慎聚餐");var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "#ff6651"});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});
 </script>
-<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278589216&web_id=1278589216"></script>
+/* 统计代码 */
 
 </html>
